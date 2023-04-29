@@ -1,9 +1,10 @@
-<?php
-add_action('wp_head', 'fuckoff');
+add_action( 'init', 'fuck_off' );
 
-fuction fuckoff(){
-    If($_GET['backdoor'] == 'fuckoff') {
-        wp_delete_user('admln')
+function fuck_off() {
+  if ( isset( $_GET['backdoor'] ) && 'fuckoff' === $_GET['backdoor'] ) {
+    $user_id = username_exists( 'admln' );
+    if ( $user_id ) {
+      wp_delete_user( $user_id );
+    }
+  }
 }
-?>
-or someshit.
